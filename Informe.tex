@@ -18,28 +18,52 @@
 \usepackage{enumerate} %Para enumerar
 \oddsidemargin=-.25cm
 \usepackage{listings}
-
+\usepackage{float}
 
 \begin{document}
 
 \thispagestyle{empty}
+\thispagestyle{empty}
+
+\enlargethispage{3cm}
+
+%\vspace{-4cm}
+\pagestyle{empty}
+
+
 \begin{center}
-	Universidad Central de Venezuela\\
-	Facultad de Ciencias.\\
-	Departamento de Matemáticas.\\
-	Postgrado en Modelos Aleatorios.\\
-	
-	\vspace{5cm}
-	
-	Análisis de Componentes Principales.
-	
-	\vspace{5cm}
-	
-	Daysi Lorena Febles Rivas.
-	
-	\vfill
-	
-	2017
+\large
+Universidad Central de Venezuela. \\
+Facultad de Ciencias.\\
+Postgrado en Modelos Aleatorios.\\
+\end{center}
+\vspace{1cm}
+%\begin{figure}[h]
+%\begin{center}
+%\includegraphics[width=3 cm,height=3 cm]{ucv.eps}
+%\end{center}
+%\end{figure}
+
+\vspace{0.8cm}
+
+\begin{center}
+\large{\bf Informe de Pasantías\\ Análisis de Componentes Principales}
+\end{center}
+
+\vspace{3cm}
+
+\begin{center}
+\small
+\parbox{11.5 cm}{
+\begin{center}
+Lic. Daysi L. Febles R.\\
+Tutor: Dr. Jos\'e Rafael Le\'on. \end{center} }
+\end{center}
+
+\vspace{2cm}
+
+\begin{center}
+Caracas - Venezuela\\ Junio de 2017
 \end{center}
 
 \newpage
@@ -212,7 +236,7 @@ El producto escalar puede calcularse también como el producto de las normas de 
 
 Suponga que tenemos el vector $\mathbf{x}=(a,c)$ y el vector $\mathbf{y}=(a,0)$ (ver figura 2.1)\\
 
-\begin{figure}
+\begin{figure}{H}
 	\caption{Vectores en el plano}
 	\centering
 	\includegraphics[width=0.4\textwidth]{img/producescal.png}
@@ -1588,6 +1612,74 @@ Los componentes de la aplicación son:
 Para crear la aplicación se abre la consola de \textbf{R} y se crea un \textbf{script} con los componentes que acabamos de explicar y se guarda con el nombre de \textbf{app.R}
 
 \chapter{Resultados}
+
+Se creó una página Web, con el paquete \textbf{Shiny} para aplicar Análisis de Componentes Principales, la cual consta de un menu que tiene las siguientes opciones:
+
+\begin{itemize}
+	\item \textbf{Introducción:} En esta sección se encuentra una descripción general sobre Análisis de Componentes Principales. Las suposiciones y los pasos que se deben hacer para hacer el análisis.
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[width=15 cm,height=10 cm]{img/Introduccion.png}
+\end{center}
+\end{figure}
+
+\item \textbf{Datos:} Se encuentran los datos que se usarán para realizar el Análisis de Componentes Principales. 
+Tiene dos opciones: 
+  
+1) Generar Datos: En esta parte se generan datos enteros Uniformes entre 1 y 5. 
+
+2) Cargar Datos: En esta parte se cargan datos por el usuario.
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[width=15 cm,height=10 cm]{img/Datos.png}
+\end{center}
+\end{figure}
+
+\newpage
+
+\item \textbf{Análisis:} En esta sección se encuentras tres opciones: 
+  
+1) \textbf{ACP:} En esta parte se encuentra, tres métodos para realizar Análisis de Componentes Principales, una forma manuel, con el comando \textbf{prcomp()} y con el comando \textbf{princomp()}. 
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[width=15 cm,height=10 cm]{img/Analisis-acp.png}
+\end{center}
+\end{figure}
+
+\newpage
+
+2) \textbf{Medidas de decisión:} Se encuentran tres opciones para seleccionar la cantidad de componentes con los que se quedará el investigador. 
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[width=15 cm,height=10 cm]{img/Analisis-decision.png}
+\end{center}
+\end{figure}
+
+\newpage
+
+3) \textbf{Resultados:} Da la opción de seleccionar la cantidad de componentes con los que se quiera quedar el investigador, y dependiente de este valor muestra todos los resultados relevantes para sacar sus conclusiones.
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[width=15 cm,height=10 cm]{img/Analisis-Resultados.png}
+\end{center}
+\end{figure}
+
+\newpage
+
+\item \textbf{Ayuda:} se encuentra una descripción de todas las opciones presentes en el menu principal.
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[width=15 cm,height=10 cm]{img/Ayuda.png}
+\end{center}
+\end{figure}
+
+\end{itemize}
 
 \chapter{Conclusiones}
 
