@@ -1,0 +1,89 @@
+\documentclass[12pt,letterpaper]{report} % Tipo de archivo y tamaño de las letras y hoja
+\usepackage[utf8]{inputenc} %Para que reconozca los acentos 
+\usepackage[spanish]{babel}  %Idioma
+\usepackage{graphicx} %Graficos
+\usepackage{amsfonts,amssymb,amsthm,amsmath} %Para escribir simbolos
+% Paquetes para el manejo de tablas, creación de filas y columnas unidas.
+\usepackage{multirow} 
+\usepackage{multicol} 
+% Control de color en tablas muy versátil.
+\usepackage[table]{xcolor}
+% Para agregar al índice las refencias
+\usepackage[nottoc,notlot,notlof]{tocbibind} 
+% define el ancho del texto en la hoja
+\setlength{\textwidth}{155mm}
+% define el alto del texto en la hoja
+\setlength{\textheight}{210mm}
+% los márgenes pueden ser editador con
+\usepackage{enumerate} %Para enumerar
+\oddsidemargin=-.25cm
+\usepackage{listings}
+\usepackage{float}
+
+\usepackage{Sweave}
+\begin{document}
+\input{prueba-concordance}
+
+\thispagestyle{empty}
+\thispagestyle{empty}
+
+\enlargethispage{3cm}
+
+%\vspace{-4cm}
+\pagestyle{empty}
+
+
+\begin{center}
+\large
+Universidad Central de Venezuela. \\
+Facultad de Ciencias.\\
+Postgrado en Modelos Aleatorios.\\
+\end{center}
+\vspace{1cm}
+%\begin{figure}[h]
+%\begin{center}
+%\includegraphics[width=3 cm,height=3 cm]{ucv.eps}
+%\end{center}
+%\end{figure}
+
+\vspace{0.8cm}
+
+\begin{center}
+\large{\bf Informe de Pasantías\\ Análisis de Componentes Principales}
+\end{center}
+
+\vspace{3cm}
+
+\begin{center}
+\small
+\parbox{11.5 cm}{
+\begin{center}
+Lic. Daysi L. Febles R.\\
+Tutor: Dr. Jos\'e Rafael Le\'on. \end{center} }
+\end{center}
+
+\vspace{2cm}
+
+\begin{center}
+Caracas - Venezuela\\ Junio de 2017
+\end{center}
+
+\newpage
+
+\chapter{Introducción}
+
+El uso de internet y sus servicios es de gran importancia para el desarrollo de las empresas actuales, poder desarrollar herramientas que nos permitan hacer calculos y mostrar resultados para tomar decisiones es el objetivo de muchas empresas para presentar servicios que investigadores puedan aprovechar.
+
+
+\begin{Schunk}
+\begin{Sinput}
+> 5+5
+\end{Sinput}
+\begin{Soutput}
+[1] 10
+\end{Soutput}
+\end{Schunk}
+
+
+
+\end{document}
